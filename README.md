@@ -3,23 +3,23 @@
 A mongodb database containing parameters for materials used in reflectometry, and their reflectivity parameters. 
 The following parameters are currently included: 
   
-Molecular parameters
+**Molecular parameters**
   * CAS number
   * Molecular volume
   * Molecular weight
   * Molecular scattering length density
   * Area per molecule
   
-Amphiphile parameters
+**Amphiphile parameters**
   * Head volume
   * Tail volume
   * Head scattering length
   * Tail scattering length
   
-Phospholipid parameters
+**Phospholipid parameters**
   * Natural or synthetic?
   
-Reflectivity parameters
+**Reflectivity parameters**
   * Tail thickness
   * Head thickness
   * Roughness
