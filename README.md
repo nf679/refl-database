@@ -1,4 +1,4 @@
-#Reflectometry Database 
+# Reflectometry Database 
 
 A mongodb database containing parameters for materials used in reflectometry, and their reflectivity parameters. 
 The following parameters are currently included: 
