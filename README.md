@@ -25,3 +25,7 @@ The following parameters are currently included:
   * Roughness
   * phi_h (check what this is?)
   * phi_t (check what this is?)
+
+
+## Examples of using the database: 
+
