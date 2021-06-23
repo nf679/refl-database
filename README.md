@@ -31,6 +31,8 @@ The following parameters are currently included:
 
 **To build the database, type in the terminal (not a mongo shell):**
 
+cd refl-database-main
+
 mongorestore --db refl_database db/dump
 
 **To check whether the collections were imported successfully:**
