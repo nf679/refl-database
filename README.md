@@ -48,3 +48,7 @@ show collections
 **To show the entries in a collection, for example in the amphiphiles collection:**
 
 db.amphiphiles.find({})
+
+**To show how many entries there are in a collection, e.g. how many phospholipids there are:**
+
+db.phospholipids.count()
