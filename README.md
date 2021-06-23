@@ -29,11 +29,11 @@ The following parameters are currently included:
 
 ## Examples of using the database: 
 
-###To build the database, type in the terminal (not a mongo shell):
+**To build the database, type in the terminal (not a mongo shell):**
 
 mongorestore --db refl_database db/dump
 
-###To check whether the collections were imported successfully: 
+**To check whether the collections were imported successfully:**
 
 mongo
 
@@ -43,6 +43,6 @@ use refl_database
 
 show collections 
 
-###To show the entries in a collection, for example in the amphiphiles collection:
+**To show the entries in a collection, for example in the amphiphiles collection:**
 
 db.amphiphiles.find({})
