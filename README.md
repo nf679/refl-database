@@ -29,3 +29,5 @@ The following parameters are currently included:
 
 ## Examples of using the database: 
 
+To build the database, type in the terminal (not a mongo shell):
+mongorestore --db refl_database db/dump
