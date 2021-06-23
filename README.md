@@ -33,7 +33,7 @@ The following parameters are currently included:
 
 cd refl-database-main
 
-mongorestore --db refl_database db/dump
+mongorestore --db refl_database db/dump/refl_database
 
 **To check whether the collections were imported successfully:**
 
