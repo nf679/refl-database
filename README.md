@@ -45,7 +45,7 @@ use refl_database
 
 show collections 
 
-**To show the entries in a collection, for example in the amphiphiles collection:**
+* **To show the entries in a collection, for example in the amphiphiles collection:**
 
 db.amphiphiles.find({})
 
