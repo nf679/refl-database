@@ -53,7 +53,7 @@ The following parameters are currently included  (with the italic parameters hav
 
     db.phospholipids.count()
     
-**To get all of the parameters for a single molecule, such as DMPC:""
+**To get all of the parameters for a single molecule, such as DMPC:**
 
     db.getCollection('molecules').aggregate([
     
