@@ -29,26 +29,26 @@ The following parameters are currently included  (with the italic parameters hav
 
 ## Examples of using the database: 
 
-* **To build the database, type in the terminal (not a mongo shell):**
+**To build the database, type in the terminal (not a mongo shell):**
 
-cd refl-database-main
+    cd refl-database-main
 
-mongorestore --db refl_database db/dump/refl_database
+    mongorestore --db refl_database db/dump/refl_database
 
-* **To check whether the collections were imported successfully:**
+**To check whether the collections were imported successfully:**
 
-mongo
+    mongo
 
-show dbs
+    show dbs
 
-use refl_database
+    use refl_database
 
-show collections 
+    show collections 
 
-* **To show the entries in a collection, for example in the amphiphiles collection:**
+**To show the entries in a collection, for example in the amphiphiles collection:**
 
-db.amphiphiles.find({})
+    db.amphiphiles.find({})
 
-* **To show how many entries there are in a collection, e.g. how many phospholipids there are:**
+**To show how many entries there are in a collection, e.g. how many phospholipids there are:**
 
-db.phospholipids.count()
+    db.phospholipids.count()
