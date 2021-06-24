@@ -56,6 +56,7 @@ The following parameters are currently included  (with the italic parameters hav
 **To get all of the parameters for a single molecule, such as DMPC:""
 
     db.getCollection('molecules').aggregate([
+    
     {$match : {name : "DMPC"}},
   
     {$lookup: {from: "amphiphiles",localField: "name",foreignField: "name",as: "amphiphiles"}}, 
