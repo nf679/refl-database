@@ -72,3 +72,7 @@ The following parameters are currently included  (with the italic parameters hav
     {$project:{"reflectivity_parameters.name":0,"reflectivity_parameters.cas_no":0,"reflectivity_parameters._id":0}}
   
     ]).pretty()
+    
+**To find the values to use for priors for a parameter, e.g. the head volume for DMPC:**
+
+    db.Gaussian.find({"name":"DMPC","parameter":"v_h"},{"_id":0,"name":0,"parameter":0}).pretty()  
