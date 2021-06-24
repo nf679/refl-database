@@ -52,3 +52,22 @@ The following parameters are currently included  (with the italic parameters hav
 **To show how many entries there are in a collection, e.g. how many phospholipids there are:**
 
     db.phospholipids.count()
+    
+**To get all of the parameters for a single molecule, such as DMPC:""
+
+  db.getCollection('molecules').aggregate([
+  {$match : {name : "DMPC"}},
+  
+  {$lookup: {from: "amphiphiles",localField: "name",foreignField: "name",as: "amphiphiles"}}, 
+  {$unwind:"$amphiphiles"},
+  {$project:{"amphiphiles.name":0,"amphiphiles.cas_no":0,"amphiphiles._id":0}}, 
+  
+  {$lookup: {from: "phospholipids", localField: "name", foreignField: "name", as:"phospholipids"}},
+  {$unwind:"$phospholipids"}, 
+  {$project:{"phospholipids.name":0,"phospholipids.cas_no":0,"phospholipids._id":0}}, 
+  
+  {$lookup: {from: "reflectivity_parameters", localField: "name", foreignField: "name", as: "reflectivity_parameters"}}, 
+  {$unwind: "$reflectivity_parameters"}, 
+  {$project:{"reflectivity_parameters.name":0,"reflectivity_parameters.cas_no":0,"reflectivity_parameters._id":0}}
+  
+  ]).pretty()
