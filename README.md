@@ -1,18 +1,18 @@
 # Reflectometry Database 
 
-A mongodb database containing parameters for materials used in reflectometry, and their reflectivity parameters. 
-The following parameters are currently included: 
+A mongodb database containing parameters for materials used in reflectometry, and their reflectivity parameters. The values used to create informed and uniform priors are included for the relevant parameters.
+The following parameters are currently included  (with the italic parameters having prior values available): 
   
 **Molecular parameters:**
   * CAS number
-  * Molecular volume
+  * _Molecular volume_
   * Molecular weight
   * Molecular scattering length density
-  * Area per molecule
+  * _Area per molecule_
   
 **Amphiphile parameters:**
-  * Head volume
-  * Tail volume
+  * _Head volume_
+  * _Tail volume_
   * Head scattering length
   * Tail scattering length
   
@@ -20,11 +20,11 @@ The following parameters are currently included:
   * Natural or synthetic?
   
 **Reflectivity parameters:**
-  * Tail thickness
-  * Head thickness
-  * Roughness
-  * phi_h (check what this is?)
-  * phi_t (check what this is?)
+  * _Tail thickness_
+  * _Head thickness_
+  * _Roughness_
+  * _phi_h (check what this is?)_
+  * _phi_t (check what this is?)_
 
 
 ## Examples of using the database: 
